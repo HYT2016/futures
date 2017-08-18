@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Firebase
+//import Firebase
 import FirebaseDatabase
 import FirebaseStorage
 import SwiftKeychainWrapper
