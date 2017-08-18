@@ -1,13 +1,13 @@
 //
 //  AppDelegate.swift
-//  futures
+//  futures 1
 //
-//  Created by Root HSZ HSU on 2017/8/17.
+//  Created by Root HSZ HSU on 2017/8/18.
 //  Copyright © 2017年 Root HSZ HSU. All rights reserved.
 //
 
 import UIKit
-
+import Firebase
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FirebaseApp.configure()
         return true
     }
 
