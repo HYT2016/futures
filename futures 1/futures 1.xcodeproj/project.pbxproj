@@ -9,12 +9,10 @@
 /* Begin PBXBuildFile section */
 		19F24B73A9802B1733E95740 /* Pods_futures_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30D7F2D6D5E726E36E3E52AD /* Pods_futures_1.framework */; };
 		DB4288F91F45F81800E38E9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4288F81F45F81800E38E9E /* AppDelegate.swift */; };
-		DB4288FB1F45F81800E38E9E /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4288FA1F45F81800E38E9E /* LoginVC.swift */; };
 		DB4288FE1F45F81800E38E9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB4288FC1F45F81800E38E9E /* Main.storyboard */; };
 		DB4289001F45F81800E38E9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB4288FF1F45F81800E38E9E /* Assets.xcassets */; };
 		DB4289031F45F81800E38E9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB4289011F45F81800E38E9E /* LaunchScreen.storyboard */; };
 		DB42890B1F45F85300E38E9E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB42890A1F45F85300E38E9E /* GoogleService-Info.plist */; };
-		DB4289111F461B4400E38E9E /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4289101F461B4400E38E9E /* SignUpVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,14 +21,12 @@
 		93D84508081C29901D5B6C2B /* Pods-futures 1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-futures 1.release.xcconfig"; path = "Pods/Target Support Files/Pods-futures 1/Pods-futures 1.release.xcconfig"; sourceTree = "<group>"; };
 		DB4288F51F45F81800E38E9E /* futures 1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "futures 1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB4288F81F45F81800E38E9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DB4288FA1F45F81800E38E9E /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		DB4288FD1F45F81800E38E9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB4288FF1F45F81800E38E9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB4289021F45F81800E38E9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB4289041F45F81800E38E9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB42890A1F45F85300E38E9E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DB42890F1F45FB4200E38E9E /* futures 1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "futures 1.entitlements"; sourceTree = "<group>"; };
-		DB4289101F461B4400E38E9E /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,8 +110,6 @@
 		DB42890E1F45FA9500E38E9E /* Comtroller */ = {
 			isa = PBXGroup;
 			children = (
-				DB4288FA1F45F81800E38E9E /* LoginVC.swift */,
-				DB4289101F461B4400E38E9E /* SignUpVC.swift */,
 			);
 			name = Comtroller;
 			sourceTree = "<group>";
@@ -264,8 +258,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB4288FB1F45F81800E38E9E /* LoginVC.swift in Sources */,
-				DB4289111F461B4400E38E9E /* SignUpVC.swift in Sources */,
 				DB4288F91F45F81800E38E9E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
