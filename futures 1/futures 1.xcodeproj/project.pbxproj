@@ -13,6 +13,7 @@
 		DB4289001F45F81800E38E9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB4288FF1F45F81800E38E9E /* Assets.xcassets */; };
 		DB4289031F45F81800E38E9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB4289011F45F81800E38E9E /* LaunchScreen.storyboard */; };
 		DB42890B1F45F85300E38E9E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB42890A1F45F85300E38E9E /* GoogleService-Info.plist */; };
+		DB608A111F49D72200A53AC6 /* stock.png in Resources */ = {isa = PBXBuildFile; fileRef = DB608A101F49D72200A53AC6 /* stock.png */; };
 		E98F35341F469C5700385B77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98F35331F469C5700385B77 /* ViewController.swift */; };
 		E98F35361F469DF100385B77 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98F35351F469DF100385B77 /* LoginController.swift */; };
 /* End PBXBuildFile section */
@@ -29,6 +30,7 @@
 		DB4289041F45F81800E38E9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB42890A1F45F85300E38E9E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DB42890F1F45FB4200E38E9E /* futures 1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "futures 1.entitlements"; sourceTree = "<group>"; };
+		DB608A101F49D72200A53AC6 /* stock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stock.png; sourceTree = "<group>"; };
 		E98F35331F469C5700385B77 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E98F35351F469DF100385B77 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,6 +109,7 @@
 		DB42890D1F45FA8D00E38E9E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DB608A101F49D72200A53AC6 /* stock.png */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB608A111F49D72200A53AC6 /* stock.png in Resources */,
 				DB4289031F45F81800E38E9E /* LaunchScreen.storyboard in Resources */,
 				DB42890B1F45F85300E38E9E /* GoogleService-Info.plist in Resources */,
 				DB4289001F45F81800E38E9E /* Assets.xcassets in Resources */,
@@ -225,7 +229,6 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-futures 1/Pods-futures 1-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -233,7 +236,6 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
