@@ -28,10 +28,37 @@ class LoginController: UIViewController {
         button.setTitle("Register", for: .normal)
         button.setTitleColor(UIColor.white, for: .normal)
         button.titleLabel?.font?=UIFont.boldSystemFont(ofSize: 16)
-        button.addTarget(self, action: #selector(handleRegister), for: .touchUpInside)
+        button.addTarget(self, action: #selector(handleLogginRegister), for: .touchUpInside)
         
         return button
     }()
+    
+    func handleLogginRegister(){
+        if loginRegisterSegmentedControl.selectedSegmentIndex==0{
+            handleLoggin()
+        }else{
+            handleRegister()
+        }
+    }
+    
+    func handleLoggin(){
+        guard let email = emailtextField.text,let password = passwordtextField.text else {
+            print("Form is not Value")
+            return
+        }
+        Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
+            
+//            這行意義是？
+            if error != nil{
+                print(error)
+                return
+            }
+//            successfully logged in our user
+            self.dismiss(animated: true, completion: nil)
+        }
+        
+        
+    }
     
     func handleRegister(){
         
@@ -58,7 +85,10 @@ class LoginController: UIViewController {
                     print(err!)
                     return
                 }
-                print("save user successfully into firebase db")
+                
+                self.dismiss(animated: true, completion: nil)
+                
+                
             })
 
         }
@@ -118,6 +148,7 @@ class LoginController: UIViewController {
 //        change height of nameTextField
         nameTextFieldHeightAnchor?.isActive=false
         nameTextFieldHeightAnchor=nametextField.heightAnchor.constraint(equalTo: inputsContainerView.heightAnchor, multiplier: loginRegisterSegmentedControl.selectedSegmentIndex==0 ? 0 : 1/3)
+        nametextField.isHidden = loginRegisterSegmentedControl.selectedSegmentIndex == 0 ? true : false
         nameTextFieldHeightAnchor?.isActive=true
         //        change height of emailTextField
         emailTextFieldHeightAnchor?.isActive=false
