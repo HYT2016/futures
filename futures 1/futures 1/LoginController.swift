@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 class LoginController: UIViewController {
     
-    
+    var messagesController = MessagesController()
     let inputsContainerView:UIView={
         let view = UIView()
         view.backgroundColor = UIColor.white
@@ -35,13 +35,13 @@ class LoginController: UIViewController {
     
     func handleLogginRegister(){
         if loginRegisterSegmentedControl.selectedSegmentIndex==0{
-            handleLoggin()
+            handleLogin()
         }else{
             handleRegister()
         }
     }
     
-    func handleLoggin(){
+    func handleLogin(){
         guard let email = emailtextField.text,let password = passwordtextField.text else {
             print("Form is not Value")
             return
@@ -50,51 +50,18 @@ class LoginController: UIViewController {
             
 //            這行意義是？
             if error != nil{
-                print(error)
+                print(error!)
                 return
             }
 //            successfully logged in our user
+            
+            self.messagesController.fetchUserAndSetupNavBarTitle()
             self.dismiss(animated: true, completion: nil)
         }
         
         
     }
     
-    func handleRegister(){
-        
-        guard let email = emailtextField.text,let password = passwordtextField.text,let name=nametextField.text else {
-            print("Form is not Value")
-            return
-        }
-        Auth.auth().createUser(withEmail: email, password: password) { (user: User?,error) in
-            if error != nil {
-                print(error!)
-                return
-            }
-            guard let uid = user?.uid else{
-                return
-            }
-            
-//            successfully authenticated  user
-        
-            let ref = Database.database().reference(fromURL: "https://hyt2017-a8954.firebaseio.com/")
-            let usersReference = ref.child("users").child(uid)
-            let values=["name":name,"email":email]
-            usersReference.updateChildValues(values, withCompletionBlock: { (err, ref) in
-                if err != nil{
-                    print(err!)
-                    return
-                }
-                
-                self.dismiss(animated: true, completion: nil)
-                
-                
-            })
-
-        }
-        
-     
-    }
     let nametextField:UITextField={
         let tf = UITextField()
         tf.placeholder="Name"
@@ -126,12 +93,17 @@ class LoginController: UIViewController {
         tf.isSecureTextEntry=true
         return tf
     }()
-    let profileImageView:UIImageView={
+    lazy var profileImageView:UIImageView={
         let imageView=UIImageView()
         imageView.image=UIImage(named: "stock")
         imageView.translatesAutoresizingMaskIntoConstraints=false
+        imageView.contentMode = .scaleAspectFill
+        imageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleSelectProfileImageView)))
+        imageView.isUserInteractionEnabled=true
         return imageView
     }()
+    
+   
     lazy var loginRegisterSegmentedControl:UISegmentedControl={
         let sc = UISegmentedControl(items: ["Login","Register"])
         sc.translatesAutoresizingMaskIntoConstraints=false
