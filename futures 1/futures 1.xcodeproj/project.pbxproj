@@ -22,6 +22,7 @@
 		DB4289031F45F81800E38E9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB4289011F45F81800E38E9E /* LaunchScreen.storyboard */; };
 		DB42890B1F45F85300E38E9E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB42890A1F45F85300E38E9E /* GoogleService-Info.plist */; };
 		DB608A111F49D72200A53AC6 /* stock.png in Resources */ = {isa = PBXBuildFile; fileRef = DB608A101F49D72200A53AC6 /* stock.png */; };
+		DBFE87691F5A82C1008A14C5 /* All contacts.png in Resources */ = {isa = PBXBuildFile; fileRef = DBFE87681F5A82C1008A14C5 /* All contacts.png */; };
 		E98F35341F469C5700385B77 /* MessagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98F35331F469C5700385B77 /* MessagesController.swift */; };
 		E98F35361F469DF100385B77 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98F35351F469DF100385B77 /* LoginController.swift */; };
 /* End PBXBuildFile section */
@@ -47,6 +48,7 @@
 		DB42890A1F45F85300E38E9E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DB42890F1F45FB4200E38E9E /* futures 1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "futures 1.entitlements"; sourceTree = "<group>"; };
 		DB608A101F49D72200A53AC6 /* stock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stock.png; sourceTree = "<group>"; };
+		DBFE87681F5A82C1008A14C5 /* All contacts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "All contacts.png"; sourceTree = "<group>"; };
 		E98F35331F469C5700385B77 /* MessagesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesController.swift; sourceTree = "<group>"; };
 		E98F35351F469DF100385B77 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,7 +124,7 @@
 				DB0E54BD1F57CDFA00BB932D /* View */,
 				DB0E54B61F53ADFD00BB932D /* Helpers */,
 				DB42890C1F45FA8400E38E9E /* Model */,
-				DB42890E1F45FA9500E38E9E /* Comtroller */,
+				DB42890E1F45FA9500E38E9E /* Controller */,
 				DB42890D1F45FA8D00E38E9E /* View */,
 				DB4288F81F45F81800E38E9E /* AppDelegate.swift */,
 				DB4288FC1F45F81800E38E9E /* Main.storyboard */,
@@ -146,12 +148,13 @@
 		DB42890D1F45FA8D00E38E9E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DBFE87681F5A82C1008A14C5 /* All contacts.png */,
 				DB608A101F49D72200A53AC6 /* stock.png */,
 			);
 			name = View;
 			sourceTree = "<group>";
 		};
-		DB42890E1F45FA9500E38E9E /* Comtroller */ = {
+		DB42890E1F45FA9500E38E9E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				E98F35351F469DF100385B77 /* LoginController.swift */,
@@ -160,7 +163,7 @@
 				DB0E54B41F52F45000BB932D /* LoginController+handlers.swift */,
 				DB0E54B91F55D1EE00BB932D /* ChatLogController.swift */,
 			);
-			name = Comtroller;
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +237,7 @@
 				DB608A111F49D72200A53AC6 /* stock.png in Resources */,
 				DB4289031F45F81800E38E9E /* LaunchScreen.storyboard in Resources */,
 				DB42890B1F45F85300E38E9E /* GoogleService-Info.plist in Resources */,
+				DBFE87691F5A82C1008A14C5 /* All contacts.png in Resources */,
 				DB4289001F45F81800E38E9E /* Assets.xcassets in Resources */,
 				DB4288FE1F45F81800E38E9E /* Main.storyboard in Resources */,
 			);
